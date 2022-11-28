@@ -86,40 +86,70 @@ nav{
     transition:all 0.3s;
     /* border-bottom: 3px solid transparent;    */
 }
-.menu ul li a:hover{
+/* .menu ul li a:hover{
    line-height: 0.3; 
    border-bottom: 2px solid white;
     
-}
-/* .menu_dropdown{
-    background-color: #080822;
-    width:300px;
-    height:180px;
-    line-height: 0.2;
-    display:block;
-    position:absolute;
-    left:0;
-    top:100%;
-}
-
-.menu_dropdown ul li ul{
-    position:absolute;
-    padding:10px;
-}
-.menu_dropdown ul li ul li{
-    width:100%;
-    border-top:1px solid #080822;
-}
-.menu_dropdown ul li ul li:focus-within >ul,
-.menu_dropdown ul li ul li:hover >ul{
-    display:initial;
-}
-
-
-.menu_dropdown a{
-    display:block;
-    text-decoration:none;
 } */
+
+.demmo{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    /* margin-left: 634px; */
+
+}
+.dropbtn{
+    padding: 16px;
+    /* font-size: 10px; */
+    border: none;
+    font-weight: 600;
+}
+
+.dropdown1 .dropdown2 .dropdown5{
+    position: relative;
+  display: inline-block;
+  /* / justify-content: space-between; / */
+} 
+
+.dropdown1 a, .dropdown2 a, .dropdown3 a, .dropdown4 a, .dropdown5 a, .dropdown6 a{
+   text-decoration: none;
+   color: white;  
+} 
+
+.dropbtn{
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: black;
+    z-index: 1;
+    padding: 20px;
+    width:250px;
+}
+
+.dropdown-content a{
+    color: white;
+    text-decoration: none;
+    line-height: 2;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown a:hover{
+    display: block;
+    text-decoration:underline;
+    font-size: 8px;
+}
+.dropdown1:hover .dropdown-content {display: block;}
+.dropdown2:hover .dropdown-content {display: block;}
+.dropdown3:hover .dropdown-content {display: block;}
+.dropdown4:hover .dropdown-content {display: block;}
+.dropdown5:hover .dropdown-content {display: block;}
+.dropdown6:hover .dropdown-content {display: block;}
+
 .container{
     display:flex;
     flex-direction:column;
@@ -146,14 +176,14 @@ nav{
     justify-content:center;
     align-items: center;
     color:white;
-    
+    font-size: 15px;
     /* padding:40px 15px 35px 15px; */
 }
 .section .section1{
     background-color:#5e22ba;
     height:400px;
     padding:90px 25px 35px 25px;
-    
+    align-items: center;
 }
 .section .section2{
     background-color:#000000;
@@ -168,19 +198,15 @@ nav{
 }
 .section .section1 button{
     text-align: center;
-    /* left:45%; */
     border:none;
-    /* top:68%; */
-    /* left:15%; */
-    /* margin-left:20px; */
     color:white;
     background-color:transparent;
     font-size: 15px;
     font-weight: 400;
-    /* position:absolute; */
     border:1px solid white;
     padding:5px;
     margin-top:10px;
+    align-items: center;
 }
 .section1 button:hover{
     border:1px solid white;
@@ -190,19 +216,15 @@ nav{
 }
 .section .section2 button{
     text-align: center;
-    /* left:45%; */
     border:none;
-    /* top:68%; */
-    /* left:15%; */
-    /* margin-left:20px; */
     color:white;
     background-color:transparent;
     font-size: 15px;
     font-weight: 400;
-    /* position:absolute; */
     border:1px solid white;
     padding:5px;
     margin-top:10px;
+    align-items: center;
 }
 .section2 button:hover{
     border:1px solid white;
@@ -212,16 +234,11 @@ nav{
 }
 .section .section3 button{
     text-align: center;
-    /* left:45%; */
     border:none;
-    /* top:68%; */
-    /* left:15%; */
-    /* margin-left:20px; */
     color:white;
     background-color:transparent;
     font-size: 15px;
     font-weight: 400;
-    /* position:absolute; */
     border:1px solid white;
     padding:5px;
     margin-top:10px;
@@ -251,25 +268,20 @@ nav{
 }
 .content button{
     text-align: center;
-    /* left:45%; */
     border:none;
-    /* top:68%; */
-    /* left:15%; */
-    /* margin-left:20px; */
     color:black;
     background-color:transparent;
     font-size: 15px;
     font-weight: 600;
     text-transform: capitalize;
-    /* position:absolute; */
     border:1px solid black;
-    padding:7px;
+    padding:10px;
     margin-top:10px;
 }
 .content button:hover{
      border:1px solid black;
     color:white;
-    padding:7px;
+    padding:10px;
     background-color:black;
 }
 .content h2{
