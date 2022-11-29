@@ -61,10 +61,12 @@ nav{
     justify-content:space-between;
     padding:30px;
 }
-.logo h1{
+.logo img{
     color:white;
+    background-color:white transparent;
     margin-left:20px;
-    font-size:35px;
+    height:50px;
+    width:110px;
 }
 .menu{
     overflow: hidden;
@@ -129,7 +131,10 @@ nav{
     padding: 20px;
     width:250px;
 }
-
+.dropdown-content a:hover{
+    text-decoration: underline;
+    padding:2px;
+}
 .dropdown-content a{
     color: white;
     text-decoration: none;
@@ -140,6 +145,7 @@ nav{
 
 .dropdown a:hover{
     display: block;
+    border-bottom: 1px solid white;
     text-decoration:underline;
     font-size: 8px;
 }
